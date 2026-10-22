@@ -37,7 +37,7 @@ The short version: Transora has no servers of its own and no user accounts. The 
 
 ## 2. Optional cloud sync (off by default)
 
-Transora can use a small Cloudflare Worker whose source the developer provides. If you choose to deploy it to **your own Cloudflare account** and enter its URL and token in Settings, the extension will:
+Transora can use a small Cloudflare Worker whose source is published at https://github.com/nguyenhx2/transora-cloud. If you choose to deploy it to **your own Cloudflare account** and enter its URL and token in Settings, the extension will:
 
 - Send translation cache entries to it: the hashed cache key, the translated text and the provider and model name. It also asks the Worker for cached translations by hashed key. Source text is not sent; only its hash.
 - If you also enable **Sync usage**, send your usage records (the fields listed above, including host names and the key fingerprint, but never the key) and download records from your other devices.
