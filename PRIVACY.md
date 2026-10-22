@@ -1,6 +1,6 @@
 # Transora Privacy Policy
 
-Effective date: 2026-10-20
+Effective date: 2026-10-22
 
 Transora is a Chrome extension that translates web pages with an AI model. You bring your own API key from OpenRouter, Google (Gemini API) or Anthropic (Claude API). This policy explains what data the extension handles, where it goes, and how to delete it.
 
@@ -21,6 +21,11 @@ The short version: Transora has no servers of its own and no user accounts. The 
 - By default only visible content is translated: text in collapsed menus, closed tabs and hidden slides is skipped until it is shown, and with lazy mode on, text is translated as you scroll to it.
 - Text that is already in your target language, code blocks, form fields and editable areas are not sent.
 - The extension does not read or send page content in the background on sites you have not asked it to translate.
+
+### Video subtitles (YouTube)
+- When you turn on **Translated subtitles** with the button in the YouTube player, the extension downloads the subtitles of the video you are watching from YouTube (the same file YouTube's own captions use) and sends their text to your AI provider, with the video title and channel name as context. Only the part you are watching is sent: from just before the current position to about two minutes ahead, unless you choose **Translate whole video**.
+- To find the subtitle tracks, a small script runs in YouTube pages and reads the track list from the YouTube player. It does not read anything else on the page and sends nothing anywhere.
+- The switch is off by default. Your choice and your subtitle style (mode, font, size, colors, position) are stored in `chrome.storage.local`.
 
 ### Translation cache
 - Translations are cached on your device (IndexedDB) so the same text is not paid for twice. Each entry is keyed by a SHA-256 hash of the source text plus your translation settings, and stores the translated text and the provider and model name.
