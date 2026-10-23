@@ -105,4 +105,4 @@ If this policy changes, the new version will be published at this address with a
 
 ## 10. Contact
 
-Questions or requests: write to the developer contact email shown on the Transora listing in the Chrome Web Store.
+Questions or requests: email nguyenhx1@gmail.com, or use the forms on the support page, https://transora.engineeringjournal.dev/support/. Please never include an API key or a Cloud token.

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help and FAQ
+    url: https://transora.engineeringjournal.dev/support/
+    about: Setup, API keys, language packs and common questions.
+  - name: Privacy policy
+    url: https://transora.engineeringjournal.dev/privacy/
+    about: What the extension handles and where it goes.

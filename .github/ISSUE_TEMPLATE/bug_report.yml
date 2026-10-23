@@ -1,0 +1,62 @@
+name: Bug report
+description: Something in the Transora extension or the Cloud worker doesn't work as expected.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please never paste an API key, a Cloud token or private page content here: this repository is public.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where does it happen?
+      options:
+        - Web page translation
+        - YouTube subtitles
+        - Side panel / settings
+        - Selection bubble
+        - Usage statistics
+        - Cloud sync (this worker)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead. Screenshots help.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page or video URL (if public)
+      placeholder: https://…
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider
+      options:
+        - OpenRouter
+        - Google Gemini
+        - Anthropic Claude
+        - Chrome built-in translator
+        - Not sure
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      placeholder: e.g. google/gemini-2.5-flash
+  - type: input
+    id: versions
+    attributes:
+      label: Transora and Chrome versions
+      description: Transora version is on chrome://extensions; Chrome version on chrome://version.
+      placeholder: Transora 0.1.1, Chrome 155
+  - type: textarea
+    id: console
+    attributes:
+      label: Errors (optional)
+      description: Messages from the page console or the extension's service worker console (chrome://extensions → Transora → service worker). Remove anything private first.
+      render: text
