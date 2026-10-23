@@ -18,6 +18,7 @@ The short version: Transora has no servers of its own and no user accounts. The 
 ### Page content
 - When you translate a page, a section, a dragged region or selected text, the extension reads the text of that part of the page and sends it to the AI provider you selected, together with short context: the page title, host name, site name, the page's meta description and the heading path of each paragraph. The full page URL is not sent.
 - Text is sent only when you ask for a translation, or on a site you have set to **Always translate**.
+- If you choose **Chrome built-in translator** as the provider, translation runs on your device with Chrome's own model and the text is not sent anywhere. Chrome downloads the language pack from Google once per language pair when you click **Download**.
 - By default only visible content is translated: text in collapsed menus, closed tabs and hidden slides is skipped until it is shown, and with lazy mode on, text is translated as you scroll to it.
 - Text that is already in your target language, code blocks, form fields and editable areas are not sent.
 - The extension does not read or send page content in the background on sites you have not asked it to translate.
